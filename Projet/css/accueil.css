@@ -1,0 +1,131 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+header{
+    background-color: white;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .left{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+header img{
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+}
+
+header p{
+    margin: 0;
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: bold;
+
+}
+
+nav{
+    display: flex;
+    gap: 20px;
+}
+
+a{
+    text-decoration-line: none;
+}
+
+header nav a{
+    padding: 10px;
+    color: black;
+}
+
+header nav a:hover{
+    color: white;
+    padding: 10px;
+    background-color: #395df7;
+    border-radius: 10px;
+}
+
+#first-section{
+    margin: 0 auto;
+    padding: 15px;
+    background-color: #e7e3f9;
+    text-align: center;
+    align-items: center;
+}
+
+section#first-section p#welcome{
+    background-color: #caddff;
+    padding: 12px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    display: inline-block;
+    border-radius: 20px;
+    color:#395df7;
+    font-weight: 600;
+}
+
+section#first-section h1{
+    font-size: 52px;
+    font-weight: normal;
+    margin-bottom: 10px
+}
+
+section#first-section p#sous-h1{
+    font-size: 20px;
+    color: #3f3f3f;
+    margin-bottom: 30px;
+}
+
+nav{
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+#DNF-button, #NC-button{
+    padding: 13px 28px;
+    border-radius: 13px;
+    text-decoration-line: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section #DNF-button{
+    display: inline-flex;
+    align-items: center;
+    background-color: #395df7;
+    color: white;
+    gap: 8px;
+}
+
+#DNF-button .icon{
+    height: 18px;
+    width: auto;
+}
+
+section #NC-button{
+    background-color: white;
+    color: black;
+}
+
+section nav#majeures a{
+    background-color: white;
+    color: black;
+}
+
+#majeures-icon{
+    height: 30px;
+    width: auto;
+    background-color: black;
+}
