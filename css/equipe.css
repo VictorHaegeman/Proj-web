@@ -284,44 +284,65 @@ header nav a:not(.active):hover{
 }
 
 .agenda-card{
-    display: grid;
-    grid-template-columns: 22px 1fr;
-    gap: 10px;
-    padding: 12px;
+    padding: 14px;
     border-radius: 12px;
     border: 1px solid #e5e9ff;
-}
-
-.agenda-card .agenda-icon{
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    margin-top: 4px;
 }
 
 .agenda-card .agenda-body{
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 10px;
+}
+
+.agenda-row{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.title-row{
+    margin-bottom: 2px;
+}
+
+.icon-badge{
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--accent, #395df7);
+    flex-shrink: 0;
+}
+
+.icon-badge img{
+    width: 16px;
+    height: 16px;
+}
+
+.type-icon{
+    background-color: var(--accent, #395df7);
 }
 
 .agenda-name{
     margin: 0;
-    font-weight: 600;
+    font-weight: 700;
     color: #1e1e1e;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .agenda-time,
 .agenda-place{
     margin: 0;
-    font-size: 13px;
+    font-size: 14px;
     color: #4f4f4f;
 }
 
 .agenda-card.course{
     background-color: #eef2ff;
     border-color: #d9e1ff;
+    --accent: #395df7;
 }
 .agenda-card.course .agenda-icon,
 .dot.course{ background-color: #395df7; }
@@ -329,6 +350,7 @@ header nav a:not(.active):hover{
 .agenda-card.permanence{
     background-color: #f0f9f3;
     border-color: #d5f0df;
+    --accent: #2e8b57;
 }
 .agenda-card.permanence .agenda-icon,
 .dot.permanence{ background-color: #3ebd5d; }
@@ -336,6 +358,7 @@ header nav a:not(.active):hover{
 .agenda-card.conference{
     background-color: #fff4eb;
     border-color: #ffe4cc;
+    --accent: #d65a1c;
 }
 .agenda-card.conference .agenda-icon,
 .dot.conference{ background-color: #ff7f32; }
@@ -343,6 +366,7 @@ header nav a:not(.active):hover{
 .agenda-card.event{
     background-color: #f3edff;
     border-color: #e5dbff;
+    --accent: #8a3fff;
 }
 .agenda-card.event .agenda-icon,
 .dot.event{ background-color: #9b59ff; }
