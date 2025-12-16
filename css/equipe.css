@@ -34,7 +34,6 @@ header p{
     font-size: 24px;
     line-height: 1.2;
     font-weight: bold;
-
 }
 
 nav{
@@ -65,59 +64,311 @@ header nav a:not(.active):hover{
     border-radius: 10px;
 }
 
-#first-section{
+/* Hero */
+
+#hero{
     background-color: #395df7;
-    padding: 20px;
-    text-align: start;
-    align-items: start;
-}
-
-.team{
-    margin-top: 20px;
-    display: flex;
-    gap: 15px;
-    align-items: center;
-    padding : 0px 15px;
-    color:white;
-    background-color: #6778f3;
-    border-radius: 50px;
-    width: fit-content;
-}
-
-#first-section h1{
-    font-size: 52px;
-    font-weight: normal;
-    margin-bottom: 10px;
+    padding: 40px 20px 50px 20px;
     color: white;
 }
 
-#first-section h2{
-    font-size: 20px;
-    color: #ffffff;
-    margin-bottom: 30px;
+#hero .chip{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 16px;
+    background-color: #2f4ed9;
+    border-radius: 30px;
+    font-size: 14px;
+    margin-bottom: 18px;
 }
 
-#second-section{
-    background-color: white;
+.chip-icon{
+    width: 18px;
+    height: 18px;
+}
+
+#hero h1{
+    font-size: 46px;
+    margin: 0 0 10px 0;
+}
+
+.hero-subtitle{
+    font-size: 16px;
+    max-width: 650px;
+    margin: 0 0 24px 0;
+    line-height: 1.5;
+}
+
+.hero-stats{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+}
+
+.stat{
     text-align: center;
 }
 
-.team-stat{
-    color:#395df7;
-    display: flex;
-    justify-content: space-around;
-    padding: 0 100px;
+.stat-number{
+    font-size: 28px;
+    font-weight: 700;
 }
 
-.team-stat .number{
-    font-size: 38px;
+.stat-label{
+    margin: 4px 0 0 0;
+}
+
+/* Teachers + agenda */
+
+#teachers-agenda{
+    padding: 40px 20px 60px 20px;
+}
+
+.section-title{
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.section-title h2{
+    margin: 0 0 8px 0;
+    font-size: 28px;
+    color: #000;
+}
+
+.section-title p{
+    margin: 0;
+    color: #555;
+}
+
+.content-grid{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 24px;
+}
+
+.teachers-column{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.teacher-card{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    gap: 14px;
+    padding: 18px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.badge{
+    width: 70px;
+    height: 70px;
+    border-radius: 16px;
+    background: linear-gradient(180deg, #8f44ff, #bd6bff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.badge img{
+    width: 30px;
+    height: 30px;
+}
+
+.teacher-body h3{
+    margin: 0 0 4px 0;
+    font-size: 20px;
+}
+
+.teacher-body .role{
+    margin: 0;
+    font-weight: 600;
+    color: #395df7;
+    font-size: 13px;
+}
+
+.teacher-body .desc{
+    margin: 4px 0 8px 0;
+    color: #555;
+    font-size: 13px;
+}
+
+.teacher-body .line{
+    margin: 4px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #555;
+    font-size: 13px;
+}
+
+.teacher-body .line img{
+    width: 16px;
+    height: 16px;
+    background-color: #e6eafc;
+    padding: 4px;
+    border-radius: 8px;
+}
+
+.availability{
+    margin: 10px 0;
+    padding: 10px 12px;
+    border-radius: 10px;
+    background-color: #eff3ff;
+    color: #4a4a4a;
+    font-size: 13px;
+}
+
+.tags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag{
+    padding: 6px 10px;
+    background-color: #f5f7ff;
+    color: #555;
+    border-radius: 14px;
+    font-size: 12px;
+}
+
+/* Agenda */
+
+.agenda-column{
+    background-color: white;
+    border-radius: 16px;
+    padding: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.agenda-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e8e8e8;
+    padding-bottom: 10px;
+    margin-bottom: 4px;
+}
+
+.agenda-title{
+    margin: 0;
     font-weight: 600;
 }
 
-.team-stat .text{
-    font-size: 22px;
+.agenda-week{
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
+.agenda-week button{
+    border: none;
+    background-color: #f0f2ff;
+    color: #395df7;
+    border-radius: 8px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+}
+
+.agenda-week span{
+    font-size: 13px;
+    color: #555;
+}
+
+.agenda-card{
+    display: grid;
+    grid-template-columns: 22px 1fr;
+    gap: 10px;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #e5e9ff;
+}
+
+.agenda-card .agenda-icon{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-top: 4px;
+}
+
+.agenda-card .agenda-body{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.agenda-name{
+    margin: 0;
+    font-weight: 600;
+    color: #1e1e1e;
+    font-size: 14px;
+}
+
+.agenda-time,
+.agenda-place{
+    margin: 0;
+    font-size: 13px;
+    color: #4f4f4f;
+}
+
+.agenda-card.course{
+    background-color: #eef2ff;
+    border-color: #d9e1ff;
+}
+.agenda-card.course .agenda-icon,
+.dot.course{ background-color: #395df7; }
+
+.agenda-card.permanence{
+    background-color: #f0f9f3;
+    border-color: #d5f0df;
+}
+.agenda-card.permanence .agenda-icon,
+.dot.permanence{ background-color: #3ebd5d; }
+
+.agenda-card.conference{
+    background-color: #fff4eb;
+    border-color: #ffe4cc;
+}
+.agenda-card.conference .agenda-icon,
+.dot.conference{ background-color: #ff7f32; }
+
+.agenda-card.event{
+    background-color: #f3edff;
+    border-color: #e5dbff;
+}
+.agenda-card.event .agenda-icon,
+.dot.event{ background-color: #9b59ff; }
+
+.agenda-legend{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(120px,1fr));
+    gap: 8px 12px;
+    margin-top: 6px;
+    font-size: 13px;
+}
+
+.agenda-legend div{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.dot{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/* Footer */
 
 #footer{
     background-color: black;
@@ -168,4 +419,30 @@ header nav a:not(.active):hover{
 
 .footer-nav a, .footer-contact a{
     color: #999999;
+}
+
+@media (max-width: 1024px){
+    .content-grid{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px){
+    header{
+        grid-template-columns: 1fr;
+        row-gap: 16px;
+    }
+
+    nav{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #hero h1{
+        font-size: 36px;
+    }
+
+    .teacher-card{
+        grid-template-columns: 70px 1fr;
+    }
 }
