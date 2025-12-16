@@ -445,6 +445,49 @@ header nav a:not(.active):hover{
     color: #999999;
 }
 
+.full-line{
+    background-color: #999999;
+    width: 100%;
+    height: 1px;
+    margin: 20px 0px;
+}
+
+.bot-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+    width: 100%;
+}
+
+.bot-footer > p:first-child {
+    flex: 1;
+    text-align: left;
+}
+
+.bot-footer > p:nth-child(2) {
+    flex: 1;
+    text-align: center;
+}
+
+.bot-footer > a {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+    color: #395df7;
+}
+
+.bot-footer p{
+    color: #999999;
+}
+
+.bot-footer img{
+    height: 22px;
+    width: auto;
+}
+
 @media (max-width: 1024px){
     .content-grid{
         grid-template-columns: 1fr;
