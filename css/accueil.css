@@ -67,7 +67,7 @@ header nav a:not(.active):hover{
 
 #first-section{
     margin: 0 auto;
-    padding: 15px;
+    padding: 30px;
     margin-bottom: 40px;
     background-color: #e7e3f9;
     text-align: center;
@@ -150,7 +150,7 @@ section #NC-button{
 #second-section, #third-section, #fifth-section{
     margin: 0 auto;
     margin-bottom: 20px;
-    padding: 15px;
+    padding: 30px;
     text-align: center;
     align-items: center;
 }
@@ -222,11 +222,60 @@ section #NC-button{
     color: #636466;
 }
 
-.card a{
+.card a.cta{
+    border: none;
+    background: none;
+    cursor: pointer;
     display: inline-flex;
     align-items: center;
-    gap: 6px;
+    gap: 12px;
     color: #395df7;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.card a.cta span.hover-underline-animation{
+    position: relative;
+    padding-bottom: 4px;
+    text-transform: none;
+    letter-spacing: 0.5px;
+    display: inline-block;
+}
+
+.card a.cta span.hover-underline-animation:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #395df7;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.card a.cta svg{
+    width: 30px;
+    height: 14px;
+    transform: translate(-6px, -1px);
+    transition: all 0.25s ease;
+    fill: currentColor;
+    align-self: center;
+}
+
+.card a.cta:hover svg{
+    transform: translate(-2px, -1px);
+}
+
+.card a.cta:hover .hover-underline-animation:after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.card a.cta:active svg{
+    transform: translate(-4px, -1px) scale(0.98);
 }
 
 .carousel{
@@ -321,7 +370,7 @@ section #NC-button{
     width: 80%;
     margin: 0 auto;
     margin-bottom: 20px;
-    padding: 15px;
+    padding: 30px;
     background-color: #395df7;
     text-align: center;
     align-items: center;
@@ -360,7 +409,7 @@ section #NC-button{
 }
 
 #sixth-section{
-    padding: 20px;
+    padding: 32px;
 }
 
 .events-boxes{
@@ -513,4 +562,13 @@ section #NC-button{
 .bot-footer img{
     height: 22px;
     width: auto;
+}
+
+
+.contact-cta .cta-arrow{
+    position: relative;
+    z-index: 10;
+    width: 18px;
+    height: 18px;
+    filter: brightness(100%);
 }

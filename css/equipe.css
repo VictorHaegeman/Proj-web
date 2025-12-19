@@ -68,43 +68,50 @@ header nav a:not(.active):hover{
 
 #hero{
     background-color: #395df7;
-    padding: 50px 20px 60px 20px;
+    padding: 40px 24px;
     color: white;
+    text-align: start;
 }
 
 .hero-inner{
-    max-width: 1100px;
-    margin: 0 auto;
+    max-width: none;
+    width: 100%;
+    margin: 0;
     display: flex;
     flex-direction: column;
     gap: 14px;
 }
 
 #hero .chip{
+    margin-top: 20px;
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    padding: 10px 16px;
-    background-color: #2f4ed9;
-    border-radius: 30px;
-    font-size: 14px;
+    padding: 8px 16px;
+    background-color: #6778f3;
+    border-radius: 999px;
+    width: fit-content;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 #hero .chip-icon{
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
 }
 
 #hero h1{
-    font-size: 48px;
-    margin: 6px 0 4px 0;
+    font-size: 52px;
+    margin: 0 0 10px 0;
+    font-weight: normal;
 }
 
 .hero-subtitle{
-    font-size: 16px;
-    max-width: 650px;
-    margin: 0 0 16px 0;
+    font-size: 20px;
+    margin: 0 0 30px 0;
     line-height: 1.5;
+    font-weight: normal;
 }
 
 .hero-stats{
@@ -129,7 +136,7 @@ header nav a:not(.active):hover{
 /* Teachers + agenda */
 
 #teachers-agenda{
-    padding: 40px 20px 60px 20px;
+    padding: 30px 24px;
 }
 
 .section-title{

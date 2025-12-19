@@ -8,7 +8,7 @@
     <body>
         <header>
             <div class="left">
-                <a href="">
+                <a href="../html/accueil.html">
                     <img id="logo-efrei" src="../img/Logo_Efrei_Blue.png" alt="Logo EFREI"></img>
                 </a>
                 <p>Département Informatique <br> EFREI Paris</p>
@@ -31,22 +31,106 @@
                     Découvrir nos formations 
                     <img src="../icons/arrow_forward.svg" class="icon"> 
                 </a>
-                <a id="NC-button" href="">Nous contacter</a>
+                <a id="NC-button" href="../html/contact-admissions.html">Nous contacter</a>
             </nav>
 
             <div>
-                <a class="majeures-row" href="">
+                <a class="majeures-row" href="../html/cours-formation.html#third-section">
                     <img src="../icons/memory.svg" alt="" class="majeures-icon">
                     <span>Intelligence Artificielle</span>
                 </a>
-                <a class="majeures-row" href="">
+                <a class="majeures-row" href="../html/cours-formation.html#third-section">
                     <img src="../icons/automation.svg" alt="" class="majeures-icon">
                     <span>Cybersécurité</span>
                 </a>
-                <a class="majeures-row" href="">
+                <a class="majeures-row" href="../html/cours-formation.html#third-section">
                     <img src="../icons/brain.svg" alt="" class="majeures-icon">
                     <span>Data Science</span>
                 </a>
+            </div>
+        </section>
+
+        <section id="second-section">
+            <h1>
+                Découvrez Notre Campus
+            </h1>
+            <h3>
+                Un environnement d'apprentissage modernet et stimulant
+            </h3>
+
+            <div class="carousel">
+                <button class="carousel-btn prev">
+                    <img src="../icons/arrow_back_carousel.svg" alt="" class="carousel-icon">
+                </button>
+
+                <div class="carousel-slides">
+                    <div class="slide active">
+                        <img src="../img/Campus1.jpg" alt="">
+                        <div class="slide-text">Campus EFREI <br> Paris</div>
+                    </div>
+                    <div class="slide">
+                        <img src="../img/Coding.jpg" alt="">
+                        <div class="slide-text">Campus principale</div>
+                    </div>
+                    <div class="slide">
+                        <img src="../img/international.png" alt="">
+                        <div class="slide-text">Étudiez à l'étranger !</div>
+                    </div>
+                </div>
+
+                <button class="carousel-btn next">
+                    <img src="../icons/arrow_forward_carousel.svg" alt="" class="carousel-icon">
+                </button>
+
+                <div class="carousel-dots">
+                    <span class="dot active" data-index="0"></span>
+                    <span class="dot" data-index="1"></span>
+                    <span class="dot" data-index="2"></span>
+                </div>
+            </div>
+        </section>
+
+        <section id="third-section">
+            <h1>
+                Explorez Notre Département
+            </h1>
+            <h3>
+                Découvrez les différentes facettes de notre département et tout ce qu'il peut vous offrir.
+            </h3>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="../icons/school_hat.svg" alt="" class="card-icon-1">
+                    <h5>Formation d'excellence</h5>
+                    <p>Des programmes d'ingénierie informatique reconnus et accrédités</p>
+                    <a href="../html/cours-formation.html#second-section" class="cta">
+                        <span class="hover-underline-animation">En savoir plus</span>
+                        <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
+                            <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="card">
+                    <img src="../icons/microscope.svg" alt="" class="card-icon-2">
+                    <h5>Recherche & Innovation</h5>
+                    <p>Laboratoire de pointe et projets de recherche internationaux</p>
+                    <a href="../html/equipe.html#teachers-agenda" class="cta">
+                        <span class="hover-underline-animation">En savoir plus</span>
+                        <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
+                            <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="card">
+                    <img src="../icons/person.svg" alt="" class="card-icon-3">
+                    <h5>Vie étudiante</h5>
+                    <p>Clubs, évènements et opportuniés de développement personnel</p>
+                    <a href="../html/contact-admissions.html#contact-section" class="cta">
+                        <span class="hover-underline-animation">En savoir plus</span>
+                        <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
+                            <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
+                        </svg>
+                    </a>
+                </div>
             </div>
         </section>
 
@@ -76,82 +160,13 @@
             </div>
         </section>
 
-        <section id="second-section">
-            <h1>
-                Découvrez Notre Campus
-            </h1>
-            <h3>
-                Un environnement d'apprentissage modernet et stimulant
-            </h3>
-
-            <div class="carousel">
-                <button class="carousel-btn prev">
-                    <img src="../icons/arrow_back_carousel.svg" alt="" class="carousel-icon">
-                </button>
-
-                <div class="carousel-slides">
-                    <div class="slide active">
-                        <img src="../img/Campus1.jpg" alt="">
-                        <div class="slide-text">Campus EFREI <br> Paris</div>
-                    </div>
-                    <div class="slide">
-                        <img src="../img/Coding.jpg" alt="">
-                        <div class="slide-text">Campus principale</div>
-                    </div>
-                    <div class="slide">
-                        <img src="../img/international.png" alt="">
-                        <div class="slide-text">Étudiez à l'étrange !</div>
-                    </div>
-                </div>
-
-                <button class="carousel-btn next">
-                    <img src="../icons/arrow_forward_carousel.svg" alt="" class="carousel-icon">
-                </button>
-
-                <div class="carousel-dots">
-                    <span class="dot active" data-index="0"></span>
-                    <span class="dot" data-index="1"></span>
-                    <span class="dot" data-index="2"></span>
-                </div>
-            </div>
-        </section>
-
-        <section id="third-section">
-            <h1>
-                Explorez Notre Département
-            </h1>
-            <h3>
-                Découvrez les différentes facettes de notre département et tout ce qu'il peut vous offrir.
-            </h3>
-            <div class="cards-container">
-                <div class="card">
-                    <img src="../icons/school_hat.svg" alt="" class="card-icon-1">
-                    <h5>Formation d'excellence</h5>
-                    <p>Des programmes d'ingénierie informatique reconnus et accrédités</p>
-                    <a href="">
-                        En savoir plus
-                        <img src="../icons/arrow_forward_purple.svg" class="icon">
-                    </a>
-                </div>
-                <div class="card">
-                    <img src="../icons/microscope.svg" alt="" class="card-icon-2">
-                    <h5>Recherche & Innovation</h5>
-                    <p>Laboratoire de pointe et projets de recherche internationaux</p>
-                    <a href="">
-                        En savoir plus
-                        <img src="../icons/arrow_forward_purple.svg" class="icon">
-                    </a>
-                </div>
-                <div class="card">
-                    <img src="../icons/person.svg" alt="" class="card-icon-3">
-                    <h5>Vie étudiante</h5>
-                    <p>Clubs, évènements et opportuniés de développement personnel</p>
-                    <a href="">
-                        En savoir plus
-                        <img src="../icons/arrow_forward_purple.svg" class="icon">
-                    </a>
-                </div>
-            </div>
+        <section id="fifth-section">
+            <h1>Prêt(e) à rejoindre <br><span style="color: #395df7"> l'aventure ?</span></h1>
+            <h3>Découvrez comment notre département peut vous aider à atteindre vos objectifs professionnels</h3>
+            <a id="DNF-button" href="../html/contact-admissions.html">
+                Contactez-nous 
+                <img src="../icons/arrow_forward.svg" class="icon"> 
+            </a>
         </section>
 
         <section id="sixth-section">
@@ -200,19 +215,10 @@
             </div>
         </section>
 
-        <section id="fifth-section">
-            <h1>Prêt(e) à rejoindre <br><span style="color: #395df7"> l'aventure ?</span></h1>
-            <h3>Découvrez comment notre département peut vous aider à atteindre vos objectifs professionnels</h3>
-            <a id="DNF-button" href="">
-                Contactez-nous 
-                <img src="../icons/arrow_forward.svg" class="icon"> 
-            </a>
-        </section>
-
         <footer id="footer">
             <div class="footer-col footer-about">
                 <div class="footer-logo-row">
-                    <a href="">
+                    <a href="../html/accueil.html">
                         <img id="logo-efrei" src="../img/Logo_Efrei_White.png" alt="Logo EFREI"></img>
                     </a>
                     <p>Département Informatique <br> EFREI Paris</p>
@@ -236,9 +242,9 @@
             <div class="footer-col footer-contact">
                 <p>Contact</p>
                 <ul>
-                    <li><a href="">30-32 Avenue de la République <br> 94800 Villejuif</a></li>
-                    <li><a href="">+33 1 46 77 47 47</a></li>
-                    <li><a href="">info.dept@efrei.fr</a></li>
+                    <li><a href="https://maps.google.com/?q=30-32 Avenue de la République 94800 Villejuif">30-32 Avenue de la République <br> 94800 Villejuif</a></li>
+                    <li><a href="tel:+33146774747">+33 1 46 77 47 47</a></li>
+                    <li><a href="mailto:info.dept@efrei.fr">info.dept@efrei.fr</a></li>
                 </ul>
             </div>
             <div class="full-line"></div>
